@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TP_Labo4.Models.Pelicula>
+
+@{
+    ViewData["Title"] = "Peliculas";
+}
+<h1>Lista de peliculas</h1>
+
+<a asp-action="Create" class="btn btn-primary">Cargar nueva pelicula</a>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <a asp-action="Details" asp-route-id="@item.Id">
+                    <img src="~/img/images/@item.Portada" class="card-img-top" alt="Imagen de @item.Titulo" style="height: 400px; object-fit: cover;">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">@item.Titulo</h5>
+                    <div class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Borrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+

@@ -1,0 +1,43 @@
+﻿@model TP_Labo4.Models.Genero
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Genero</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        <form asp-action="ImportarExcel" enctype="multipart/form-data" method="post">
+            <div class="form-group mb-3">
+                <label class="control-label" style="font-weight: bold" for="importExcel">Seleccione archivo EXCEL para importar generos</label>
+                <br />
+                <input type="file" id="importExcel" name="excelFile" accept=".xlsx, .xls" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+                <input type="submit" value="Importar EXCEL" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
