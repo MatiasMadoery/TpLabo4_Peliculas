@@ -33,11 +33,12 @@ namespace TP_Labo4.Controllers
             {
                 return NotFound();
             }
-
             var pelicula = await _context.Peliculas
-                .Include(p => p.PeliculaActores)  //Relación con actores
-                .Include(p => p.Genero)
-                .FirstOrDefaultAsync(m => m.Id == id);
+              .Include(p => p.Genero) //Incluir genero
+              .Include(p => p.PeliculaActores!)  //Relación con actores
+              .ThenInclude(pa => pa.Actor)
+              .FirstOrDefaultAsync(m => m.Id == id);
+
             if (pelicula == null)
             {
                 return NotFound();
@@ -49,7 +50,10 @@ namespace TP_Labo4.Controllers
         // GET: Peliculas/Create
         public IActionResult Create()
         {
-            ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Id");
+            ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Descripcion");
+
+            // Cargar los actores disponibles para asociarlos con la película
+            ViewBag.Actores = _context.Actores.ToList();
             return View();
         }
 
@@ -58,7 +62,7 @@ namespace TP_Labo4.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,GeneroId,Titulo,FechaEstreno,Portada,Trailer,Resumen")] Pelicula pelicula)
+        public async Task<IActionResult> Create([Bind("Id,GeneroId,Titulo,FechaEstreno,Portada,Trailer,Resumen")] Pelicula pelicula, List<int> actoresIds)
         {
             if (ModelState.IsValid)
             {
@@ -84,26 +88,52 @@ namespace TP_Labo4.Controllers
                 }
                 _context.Add(pelicula);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+
+                // Asociar actores seleccionados a la película
+                if (actoresIds != null)
+                {
+                    foreach (var actorId in actoresIds)
+                    {
+                        var peliculaActor = new PeliculaActores
+                        {
+                            PeliculaId = pelicula.Id,
+                            ActorId = actorId
+                        };
+                        _context.PeliculaActores.Add(peliculaActor);
+                        _context.SaveChanges();  // Guardar los cambios
+                        return RedirectToAction("Index");
+                    }
+                }
+
             }
-            ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Id", pelicula.GeneroId);
+            ViewBag.Actores = _context.Actores.ToList();
+            ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Descripcion", pelicula.GeneroId);
             return View(pelicula);
         }
 
         // GET: Peliculas/Edit/5
         public async Task<IActionResult> Edit(int? id)
-        {
+        {           
             if (id == null)
             {
                 return NotFound();
             }
 
-            var pelicula = await _context.Peliculas.FindAsync(id);
+            var pelicula = await _context.Peliculas
+              .Include(p => p.PeliculaActores!)  //Relación con actores
+              .ThenInclude(pa => pa.Actor)
+              .FirstOrDefaultAsync(m => m.Id == id);
+
             if (pelicula == null)
             {
                 return NotFound();
             }
-            ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Id", pelicula.GeneroId);
+
+            // Cargar los actores disponibles para asociarlos con la película
+            ViewBag.Actores = _context.Actores.ToList();
+
+            ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Descripcion", pelicula.GeneroId);
             return View(pelicula);
         }
 
@@ -112,7 +142,7 @@ namespace TP_Labo4.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,GeneroId,Titulo,FechaEstreno,Portada,Trailer,Resumen")] Pelicula pelicula)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,GeneroId,Titulo,FechaEstreno,Portada,Trailer,Resumen")] Pelicula pelicula, List<int> actoresIds)
         {
             if (id != pelicula.Id)
             {
@@ -121,11 +151,21 @@ namespace TP_Labo4.Controllers
 
             if (ModelState.IsValid)
             {
+                // Si no se selecciona ningún archivo, mantener la portada existente
                 var archivos = HttpContext.Request.Form.Files;
-                if (archivos != null && archivos.Count > 0)
+                if (archivos != null || archivos?.Count == 0)
                 {
-                    var archivoFoto = archivos[0];
-                    if (archivoFoto.Length > 0)
+                    // Mantener la portada actual (no la sobrescribas)
+                    pelicula.Portada = _context.Peliculas
+                        .AsNoTracking()
+                        .Where(p => p.Id == pelicula.Id)
+                        .Select(p => p.Portada)
+                        .FirstOrDefault();
+                }
+                else
+                {
+                    var archivoFoto = archivos?[0];
+                    if (archivoFoto?.Length > 0)
                     {
                         var pathDestino = Path.Combine(_env.WebRootPath, "img\\images");
 
@@ -146,9 +186,68 @@ namespace TP_Labo4.Controllers
                             }
                             pelicula.Portada = archivoDestino;
                         }
-
                     }
                 }
+
+                //Guardar y validar actores en las peliculas
+                if (actoresIds != null)
+                {
+                    // Crear una lista para almacenar las nuevas relaciones de actores
+                    var nuevaRelaciones = new List<PeliculaActores>();
+
+                    // Cargar la película existente para verificar relaciones
+                    var peliculaExistente = _context.Peliculas
+                        .Include(p => p.PeliculaActores)
+                        .FirstOrDefault(p => p.Id == pelicula.Id);
+
+                    // Obtener los IDs de los actores ya relacionados
+                    var actoresYaRelacionados = peliculaExistente.PeliculaActores.Select(pa => pa.ActorId).ToList();
+
+                    foreach (var actorId in actoresIds)
+                    {
+                        // Verificar si el actor ya está relacionado
+                        if (!actoresYaRelacionados.Contains(actorId))
+                        {
+                            // Agregar la nueva relación si no está ya relacionada
+                            var peliculaActor = new PeliculaActores
+                            {
+                                PeliculaId = pelicula.Id,
+                                ActorId = actorId
+                            };
+                            nuevaRelaciones.Add(peliculaActor);
+                        }
+                        else
+                        {
+                            // Aquí puedes agregar un mensaje si lo deseas
+                            ModelState.AddModelError("Actores", $"El actor con ID {actorId} ya está asociado con esta película.");
+                        }
+                    }
+
+                    // Agregar todas las nuevas relaciones de actores a la base de datos
+                    if (nuevaRelaciones.Any())
+                    {
+                        _context.PeliculaActores.AddRange(nuevaRelaciones);
+                        _context.SaveChanges();  // Guardar los cambios
+                    }
+
+                    return RedirectToAction("Index");
+                }
+
+                //if (actoresIds != null)
+                //{
+                //    foreach (var actorId in actoresIds)
+                //    {
+                //        var peliculaActor = new PeliculaActores
+                //        {
+                //            PeliculaId = pelicula.Id,
+                //            ActorId = actorId
+                //        };
+                //        _context.PeliculaActores.Add(peliculaActor);
+                //        _context.SaveChanges();  // Guardar los cambios
+                //        return RedirectToAction("Index");
+                //    }
+                //}                
+            
                 try
                 {
                     _context.Update(pelicula);
@@ -167,7 +266,8 @@ namespace TP_Labo4.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Id", pelicula.GeneroId);
+            ViewBag.Actores = _context.Actores.ToList();
+            ViewData["GeneroId"] = new SelectList(_context.Generos, "Id", "Descripcion", pelicula.GeneroId);
             return View(pelicula);
         }
 

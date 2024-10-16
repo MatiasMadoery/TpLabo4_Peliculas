@@ -11,7 +11,18 @@ namespace TP_Labo4.Models
         }       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<PeliculaActores>().HasKey(k => new { k.PeliculaId, k.ActorId });
+            modelBuilder.Entity<PeliculaActores>()
+            .HasKey(pa => new { pa.PeliculaId, pa.ActorId });
+
+            modelBuilder.Entity<PeliculaActores>()
+                .HasOne(pa => pa.Pelicula)
+                .WithMany(p => p.PeliculaActores)
+                .HasForeignKey(pa => pa.PeliculaId);
+
+            modelBuilder.Entity<PeliculaActores>()
+                .HasOne(pa => pa.Actor)
+                .WithMany(a => a.PeliculaActores)
+                .HasForeignKey(pa => pa.ActorId);
         }
         public DbSet<Actor> Actores { get; set; }
         public DbSet<Genero> Generos { get; set; }

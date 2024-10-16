@@ -253,3 +253,4 @@ C:\Users\matim\OneDrive\TUP\segundoAño\SegundoCuatrimestre\LaboratorioIV\Ejerci
 C:\Users\matim\OneDrive\TUP\segundoAño\SegundoCuatrimestre\LaboratorioIV\EjerciciosEnClases\TP_Lab4\TP_Labo4\TP_Labo4\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
 C:\Users\matim\OneDrive\TUP\segundoAño\SegundoCuatrimestre\LaboratorioIV\EjerciciosEnClases\TP_Lab4\TP_Labo4\TP_Labo4\bin\Debug\net8.0\SpreadsheetLight.dll
 C:\Users\matim\OneDrive\TUP\segundoAño\SegundoCuatrimestre\LaboratorioIV\EjerciciosEnClases\TP_Lab4\TP_Labo4\TP_Labo4\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\matim\OneDrive\TUP\segundoAño\SegundoCuatrimestre\LaboratorioIV\EjerciciosEnClases\TP_Lab4\TP_Labo4\TP_Labo4\obj\Debug\net8.0\TP_Labo4.sourcelink.json
