@@ -19,12 +19,26 @@ namespace TP_Labo4.Controllers
             _context = context;
             _env = env;
         }
-       
+
         // GET: Peliculas
-        public async Task<IActionResult> Index()
-        {           
-            return View(await _context.Peliculas.ToListAsync());
+
+        //Accion para Buscador
+        public IActionResult Index(string searchString)
+        {
+            var peliculas = from p in _context.Peliculas select p;
+
+            // Filtrar las películas si hay un término de búsqueda
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                peliculas = peliculas.Where(p => p.Titulo!.Contains(searchString));
+            }
+
+            return View(peliculas.ToList());
         }
+        //public async Task<IActionResult> Index()
+        //{           
+        //    return View(await _context.Peliculas.ToListAsync());
+        //}
 
         // GET: Peliculas/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -201,7 +215,7 @@ namespace TP_Labo4.Controllers
                         .FirstOrDefault(p => p.Id == pelicula.Id);
 
                     // Obtener los IDs de los actores ya relacionados
-                    var actoresYaRelacionados = peliculaExistente.PeliculaActores.Select(pa => pa.ActorId).ToList();
+                    var actoresYaRelacionados = peliculaExistente!.PeliculaActores!.Select(pa => pa.ActorId).ToList();
 
                     foreach (var actorId in actoresIds)
                     {

@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\views\\peliculas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\views\\peliculas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\views\\peliculas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\views\\peliculas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\views\\peliculas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\views\\peliculas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\views\\peliculas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\views\\peliculas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,53 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Genero.cs",
-              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Models\\Genero.cs",
-              "RelativeDocumentMoniker": "TP_Labo4\\Models\\Genero.cs",
-              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Models\\Genero.cs",
-              "RelativeToolTip": "TP_Labo4\\Models\\Genero.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:56:00.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Create.cshtml",
-              "RelativeDocumentMoniker": "TP_Labo4\\Views\\Peliculas\\Create.cshtml",
-              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Create.cshtml",
-              "RelativeToolTip": "TP_Labo4\\Views\\Peliculas\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABcAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Index.cshtml",
+              "RelativeDocumentMoniker": "TP_Labo4\\Views\\Peliculas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Index.cshtml",
+              "RelativeToolTip": "TP_Labo4\\Views\\Peliculas\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T14:53:29.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Details.cshtml",
-              "RelativeDocumentMoniker": "TP_Labo4\\Views\\Peliculas\\Details.cshtml",
-              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Details.cshtml",
-              "RelativeToolTip": "TP_Labo4\\Views\\Peliculas\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T13:42:15.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Edit.cshtml",
-              "RelativeDocumentMoniker": "TP_Labo4\\Views\\Peliculas\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Edit.cshtml",
-              "RelativeToolTip": "TP_Labo4\\Views\\Peliculas\\Edit.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T13:35:00.75Z",
+              "WhenOpened": "2024-10-16T16:03:55.392Z",
               "EditorCaption": ""
             },
             {
@@ -104,7 +53,7 @@
               "RelativeDocumentMoniker": "TP_Labo4\\Controllers\\PeliculasController.cs",
               "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Controllers\\PeliculasController.cs",
               "RelativeToolTip": "TP_Labo4\\Controllers\\PeliculasController.cs",
-              "ViewState": "AgIAAN8AAAAAAAAAAAAnwMIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T13:33:25.74Z",
               "EditorCaption": ""
