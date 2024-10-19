@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\controllers\\actorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\controllers\\actorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\views\\peliculas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\views\\peliculas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\views\\actores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\views\\actores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|c:\\users\\matim\\onedrive\\tup\\segundoa\u00F1o\\segundocuatrimestre\\laboratorioiv\\ejerciciosenclases\\tp_lab4\\tp_labo4\\tp_labo4\\views\\peliculas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE71DEE7-591E-40C2-8BAD-7A352B4A6611}|TP_Labo4\\TP_Labo4.csproj|solutionrelative:tp_labo4\\views\\peliculas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,29 +54,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TP_Labo4\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "TP_Labo4\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T23:01:36.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerosController.cs",
+              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Controllers\\GenerosController.cs",
+              "RelativeDocumentMoniker": "TP_Labo4\\Controllers\\GenerosController.cs",
+              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Controllers\\GenerosController.cs",
+              "RelativeToolTip": "TP_Labo4\\Controllers\\GenerosController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAALsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T22:37:26.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Index.cshtml",
               "RelativeDocumentMoniker": "TP_Labo4\\Views\\Peliculas\\Index.cshtml",
               "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Index.cshtml",
               "RelativeToolTip": "TP_Labo4\\Views\\Peliculas\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T16:03:55.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T22:26:07.751Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Actores\\Index.cshtml",
+              "RelativeDocumentMoniker": "TP_Labo4\\Views\\Actores\\Index.cshtml",
+              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Actores\\Index.cshtml",
+              "RelativeToolTip": "TP_Labo4\\Views\\Actores\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T22:25:42.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActoresController.cs",
+              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Controllers\\ActoresController.cs",
+              "RelativeDocumentMoniker": "TP_Labo4\\Controllers\\ActoresController.cs",
+              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Controllers\\ActoresController.cs",
+              "RelativeToolTip": "TP_Labo4\\Controllers\\ActoresController.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAqwBcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T22:23:52.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TP_Labo4\\Views\\Peliculas\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Views\\Peliculas\\Edit.cshtml",
+              "RelativeToolTip": "TP_Labo4\\Views\\Peliculas\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T22:22:35.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PeliculasController.cs",
               "DocumentMoniker": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Controllers\\PeliculasController.cs",
               "RelativeDocumentMoniker": "TP_Labo4\\Controllers\\PeliculasController.cs",
               "ToolTip": "C:\\Users\\matim\\OneDrive\\TUP\\segundoA\u00F1o\\SegundoCuatrimestre\\LaboratorioIV\\EjerciciosEnClases\\TP_Lab4\\TP_Labo4\\TP_Labo4\\Controllers\\PeliculasController.cs",
               "RelativeToolTip": "TP_Labo4\\Controllers\\PeliculasController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAWwFIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T13:33:25.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T13:33:25.74Z"
             }
           ]
         }
